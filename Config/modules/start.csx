@@ -1,0 +1,4 @@
+void OnClick()
+{
+    Shell.SendWinKey();
+}

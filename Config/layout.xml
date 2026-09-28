@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shell>
+  <!--
+    XML раскладка оверлея.
+    Неизвестный тег = виджет (в будущем сюда же пойдут модульные виджеты).
+    module="name" подключает config/modules/name.csx
+    filler разделяет левую и правую группы.
+  -->
+  <bar id="main" class="bar" edge="bottom" height="64" margin="10">
+    <button id="start" class="icon-btn" module="start">S</button>
+    <separator class="separator"/>
+    <pins class="pins"/>
+    <filler/>
+    <label id="clock" class="clock" module="clock">--:--</label>
+    <button id="exit" class="icon-btn" module="exit">X</button>
+  </bar>
+</shell>

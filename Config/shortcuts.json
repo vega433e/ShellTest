@@ -1,0 +1,20 @@
+{
+  "shortcuts": [
+    {
+      "name": "Terminal",
+      "path": "wt.exe"
+    },
+    {
+      "name": "Explorer",
+      "path": "explorer.exe"
+    },
+    {
+      "name": "Edge",
+      "path": "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe"
+    },
+    {
+      "name": "VS Code",
+      "path": "%LOCALAPPDATA%\\Programs\\Microsoft VS Code\\Code.exe"
+    }
+  ]
+}

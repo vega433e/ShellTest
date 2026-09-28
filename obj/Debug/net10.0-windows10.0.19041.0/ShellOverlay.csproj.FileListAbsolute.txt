@@ -1,0 +1,10 @@
+D:\Projects\.Net Projects\ShellOverlay\obj\Debug\net10.0-windows10.0.19041.0\ShellOverlay.csproj.AssemblyReference.cache
+D:\Projects\.Net Projects\ShellOverlay\obj\Debug\net10.0-windows10.0.19041.0\Avalonia\Resources.Inputs.cache
+D:\Projects\.Net Projects\ShellOverlay\obj\Debug\net10.0-windows10.0.19041.0\Avalonia\resources
+D:\Projects\.Net Projects\ShellOverlay\obj\Debug\net10.0-windows10.0.19041.0\ShellOverlay.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\.Net Projects\ShellOverlay\obj\Debug\net10.0-windows10.0.19041.0\ShellOverlay.AssemblyInfoInputs.cache
+D:\Projects\.Net Projects\ShellOverlay\obj\Debug\net10.0-windows10.0.19041.0\ShellOverlay.AssemblyInfo.cs
+D:\Projects\.Net Projects\ShellOverlay\obj\Debug\net10.0-windows10.0.19041.0\ShellOverlay.csproj.CoreCompileInputs.cache
+D:\Projects\.Net Projects\ShellOverlay\obj\Debug\net10.0-windows10.0.19041.0\ShellOverlay.dll
+D:\Projects\.Net Projects\ShellOverlay\obj\Debug\net10.0-windows10.0.19041.0\refint\ShellOverlay.dll
+D:\Projects\.Net Projects\ShellOverlay\obj\Debug\net10.0-windows10.0.19041.0\ShellOverlay.pdb

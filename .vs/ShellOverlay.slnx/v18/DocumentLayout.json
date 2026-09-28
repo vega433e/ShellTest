@@ -1,0 +1,313 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Projects\\.Net Projects\\ShellOverlay\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8C48E6EE-D04B-B008-B391-20D4F0466748}|ShellOverlay.csproj|d:\\projects\\.net projects\\shelloverlay\\services\\interop\\nativemethods.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C48E6EE-D04B-B008-B391-20D4F0466748}|ShellOverlay.csproj|solutionrelative:services\\interop\\nativemethods.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C48E6EE-D04B-B008-B391-20D4F0466748}|ShellOverlay.csproj|d:\\projects\\.net projects\\shelloverlay\\shelloverlay.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{8C48E6EE-D04B-B008-B391-20D4F0466748}|ShellOverlay.csproj|solutionrelative:shelloverlay.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C48E6EE-D04B-B008-B391-20D4F0466748}|ShellOverlay.csproj|d:\\projects\\.net projects\\shelloverlay\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C48E6EE-D04B-B008-B391-20D4F0466748}|ShellOverlay.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C48E6EE-D04B-B008-B391-20D4F0466748}|ShellOverlay.csproj|d:\\projects\\.net projects\\shelloverlay\\viewmodels\\shortcutviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C48E6EE-D04B-B008-B391-20D4F0466748}|ShellOverlay.csproj|solutionrelative:viewmodels\\shortcutviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C48E6EE-D04B-B008-B391-20D4F0466748}|ShellOverlay.csproj|d:\\projects\\.net projects\\shelloverlay\\viewmodels\\viewmodelbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C48E6EE-D04B-B008-B391-20D4F0466748}|ShellOverlay.csproj|solutionrelative:viewmodels\\viewmodelbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C48E6EE-D04B-B008-B391-20D4F0466748}|ShellOverlay.csproj|d:\\projects\\.net projects\\shelloverlay\\services\\themeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C48E6EE-D04B-B008-B391-20D4F0466748}|ShellOverlay.csproj|solutionrelative:services\\themeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C48E6EE-D04B-B008-B391-20D4F0466748}|ShellOverlay.csproj|d:\\projects\\.net projects\\shelloverlay\\app.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C48E6EE-D04B-B008-B391-20D4F0466748}|ShellOverlay.csproj|solutionrelative:app.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C48E6EE-D04B-B008-B391-20D4F0466748}|ShellOverlay.csproj|d:\\projects\\.net projects\\shelloverlay\\models\\themepalette.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C48E6EE-D04B-B008-B391-20D4F0466748}|ShellOverlay.csproj|solutionrelative:models\\themepalette.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C48E6EE-D04B-B008-B391-20D4F0466748}|ShellOverlay.csproj|d:\\projects\\.net projects\\shelloverlay\\views\\mainwindow.axaml||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{8C48E6EE-D04B-B008-B391-20D4F0466748}|ShellOverlay.csproj|solutionrelative:views\\mainwindow.axaml||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C48E6EE-D04B-B008-B391-20D4F0466748}|ShellOverlay.csproj|d:\\projects\\.net projects\\shelloverlay\\views\\mainwindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C48E6EE-D04B-B008-B391-20D4F0466748}|ShellOverlay.csproj|solutionrelative:views\\mainwindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C48E6EE-D04B-B008-B391-20D4F0466748}|ShellOverlay.csproj|d:\\projects\\.net projects\\shelloverlay\\viewmodels\\mainwindowviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C48E6EE-D04B-B008-B391-20D4F0466748}|ShellOverlay.csproj|solutionrelative:viewmodels\\mainwindowviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C48E6EE-D04B-B008-B391-20D4F0466748}|ShellOverlay.csproj|d:\\projects\\.net projects\\shelloverlay\\services\\shortcutservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C48E6EE-D04B-B008-B391-20D4F0466748}|ShellOverlay.csproj|solutionrelative:services\\shortcutservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C48E6EE-D04B-B008-B391-20D4F0466748}|ShellOverlay.csproj|d:\\projects\\.net projects\\shelloverlay\\services\\shellmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C48E6EE-D04B-B008-B391-20D4F0466748}|ShellOverlay.csproj|solutionrelative:services\\shellmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C48E6EE-D04B-B008-B391-20D4F0466748}|ShellOverlay.csproj|d:\\projects\\.net projects\\shelloverlay\\models\\shortcutconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C48E6EE-D04B-B008-B391-20D4F0466748}|ShellOverlay.csproj|solutionrelative:models\\shortcutconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C48E6EE-D04B-B008-B391-20D4F0466748}|ShellOverlay.csproj|d:\\projects\\.net projects\\shelloverlay\\app.axaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{8C48E6EE-D04B-B008-B391-20D4F0466748}|ShellOverlay.csproj|solutionrelative:app.axaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C48E6EE-D04B-B008-B391-20D4F0466748}|ShellOverlay.csproj|d:\\projects\\.net projects\\shelloverlay\\shortcuts.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{8C48E6EE-D04B-B008-B391-20D4F0466748}|ShellOverlay.csproj|solutionrelative:shortcuts.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C48E6EE-D04B-B008-B391-20D4F0466748}|ShellOverlay.csproj|d:\\projects\\.net projects\\shelloverlay\\app.manifest||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{8C48E6EE-D04B-B008-B391-20D4F0466748}|ShellOverlay.csproj|solutionrelative:app.manifest||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 8,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ShortcutViewModel.cs",
+              "DocumentMoniker": "D:\\Projects\\.Net Projects\\ShellOverlay\\ViewModels\\ShortcutViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\ShortcutViewModel.cs",
+              "ToolTip": "D:\\Projects\\.Net Projects\\ShellOverlay\\ViewModels\\ShortcutViewModel.cs",
+              "RelativeToolTip": "ViewModels\\ShortcutViewModel.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAmwC8AAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-28T10:33:12.99Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ShellOverlay",
+              "DocumentMoniker": "D:\\Projects\\.Net Projects\\ShellOverlay\\ShellOverlay.csproj",
+              "RelativeDocumentMoniker": "ShellOverlay.csproj",
+              "ToolTip": "D:\\Projects\\.Net Projects\\ShellOverlay\\ShellOverlay.csproj",
+              "RelativeToolTip": "ShellOverlay.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAE0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-09-28T10:24:47.556Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ViewModelBase.cs",
+              "DocumentMoniker": "D:\\Projects\\.Net Projects\\ShellOverlay\\ViewModels\\ViewModelBase.cs",
+              "RelativeDocumentMoniker": "ViewModels\\ViewModelBase.cs",
+              "ToolTip": "D:\\Projects\\.Net Projects\\ShellOverlay\\ViewModels\\ViewModelBase.cs",
+              "RelativeToolTip": "ViewModels\\ViewModelBase.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-28T10:32:59.932Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ThemeService.cs",
+              "DocumentMoniker": "D:\\Projects\\.Net Projects\\ShellOverlay\\Services\\ThemeService.cs",
+              "RelativeDocumentMoniker": "Services\\ThemeService.cs",
+              "ToolTip": "D:\\Projects\\.Net Projects\\ShellOverlay\\Services\\ThemeService.cs",
+              "RelativeToolTip": "Services\\ThemeService.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAIwGkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-28T10:32:07.795Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "MainWindow.axaml",
+              "DocumentMoniker": "D:\\Projects\\.Net Projects\\ShellOverlay\\Views\\MainWindow.axaml",
+              "RelativeDocumentMoniker": "Views\\MainWindow.axaml",
+              "ToolTip": "D:\\Projects\\.Net Projects\\ShellOverlay\\Views\\MainWindow.axaml",
+              "RelativeToolTip": "Views\\MainWindow.axaml",
+              "ViewState": "AgIAAEQAAAAAAAAAAAAqwEsAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-09-28T10:33:52.247Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "MainWindow.axaml.cs",
+              "DocumentMoniker": "D:\\Projects\\.Net Projects\\ShellOverlay\\Views\\MainWindow.axaml.cs",
+              "RelativeDocumentMoniker": "Views\\MainWindow.axaml.cs",
+              "ToolTip": "D:\\Projects\\.Net Projects\\ShellOverlay\\Views\\MainWindow.axaml.cs",
+              "RelativeToolTip": "Views\\MainWindow.axaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-28T10:34:21.641Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ThemePalette.cs",
+              "DocumentMoniker": "D:\\Projects\\.Net Projects\\ShellOverlay\\Models\\ThemePalette.cs",
+              "RelativeDocumentMoniker": "Models\\ThemePalette.cs",
+              "ToolTip": "D:\\Projects\\.Net Projects\\ShellOverlay\\Models\\ThemePalette.cs",
+              "RelativeToolTip": "Models\\ThemePalette.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-28T10:30:34.73Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Projects\\.Net Projects\\ShellOverlay\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\Projects\\.Net Projects\\ShellOverlay\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-28T10:27:21.96Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "NativeMethods.cs",
+              "DocumentMoniker": "D:\\Projects\\.Net Projects\\ShellOverlay\\Services\\Interop\\NativeMethods.cs",
+              "RelativeDocumentMoniker": "Services\\Interop\\NativeMethods.cs",
+              "ToolTip": "D:\\Projects\\.Net Projects\\ShellOverlay\\Services\\Interop\\NativeMethods.cs",
+              "RelativeToolTip": "Services\\Interop\\NativeMethods.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAQAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-28T10:31:36.624Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "MainWindowViewModel.cs",
+              "DocumentMoniker": "D:\\Projects\\.Net Projects\\ShellOverlay\\ViewModels\\MainWindowViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\MainWindowViewModel.cs",
+              "ToolTip": "D:\\Projects\\.Net Projects\\ShellOverlay\\ViewModels\\MainWindowViewModel.cs",
+              "RelativeToolTip": "ViewModels\\MainWindowViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-28T10:33:25.415Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ShortcutService.cs",
+              "DocumentMoniker": "D:\\Projects\\.Net Projects\\ShellOverlay\\Services\\ShortcutService.cs",
+              "RelativeDocumentMoniker": "Services\\ShortcutService.cs",
+              "ToolTip": "D:\\Projects\\.Net Projects\\ShellOverlay\\Services\\ShortcutService.cs",
+              "RelativeToolTip": "Services\\ShortcutService.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAgwC8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-28T10:32:32.736Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "App.axaml.cs",
+              "DocumentMoniker": "D:\\Projects\\.Net Projects\\ShellOverlay\\App.axaml.cs",
+              "RelativeDocumentMoniker": "App.axaml.cs",
+              "ToolTip": "D:\\Projects\\.Net Projects\\ShellOverlay\\App.axaml.cs",
+              "RelativeToolTip": "App.axaml.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAmwCIAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-28T10:27:47.283Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ShellManager.cs",
+              "DocumentMoniker": "D:\\Projects\\.Net Projects\\ShellOverlay\\Services\\ShellManager.cs",
+              "RelativeDocumentMoniker": "Services\\ShellManager.cs",
+              "ToolTip": "D:\\Projects\\.Net Projects\\ShellOverlay\\Services\\ShellManager.cs",
+              "RelativeToolTip": "Services\\ShellManager.cs",
+              "ViewState": "AgIAAIIAAAAAAAAAAAAQwKMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-28T10:31:48.366Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ShortcutConfig.cs",
+              "DocumentMoniker": "D:\\Projects\\.Net Projects\\ShellOverlay\\Models\\ShortcutConfig.cs",
+              "RelativeDocumentMoniker": "Models\\ShortcutConfig.cs",
+              "ToolTip": "D:\\Projects\\.Net Projects\\ShellOverlay\\Models\\ShortcutConfig.cs",
+              "RelativeToolTip": "Models\\ShortcutConfig.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-28T10:28:54.915Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "App.axaml",
+              "DocumentMoniker": "D:\\Projects\\.Net Projects\\ShellOverlay\\App.axaml",
+              "RelativeDocumentMoniker": "App.axaml",
+              "ToolTip": "D:\\Projects\\.Net Projects\\ShellOverlay\\App.axaml",
+              "RelativeToolTip": "App.axaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-09-28T10:27:38.214Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "shortcuts.json",
+              "DocumentMoniker": "D:\\Projects\\.Net Projects\\ShellOverlay\\shortcuts.json",
+              "RelativeDocumentMoniker": "shortcuts.json",
+              "ToolTip": "D:\\Projects\\.Net Projects\\ShellOverlay\\shortcuts.json",
+              "RelativeToolTip": "shortcuts.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-09-28T10:25:40.838Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "app.manifest",
+              "DocumentMoniker": "D:\\Projects\\.Net Projects\\ShellOverlay\\app.manifest",
+              "RelativeDocumentMoniker": "app.manifest",
+              "ToolTip": "D:\\Projects\\.Net Projects\\ShellOverlay\\app.manifest",
+              "RelativeToolTip": "app.manifest",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001203|",
+              "WhenOpened": "2026-09-28T10:25:01.335Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

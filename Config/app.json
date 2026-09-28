@@ -1,0 +1,11 @@
+{
+  "hideTaskbar": true,
+  "hideSecondaryTaskbars": true,
+  "hideNotifyOverflow": true,
+  "registerAppBar": true,
+  "exitHotkey": "Ctrl+Alt+Q",
+  "layoutFile": "layout.xml",
+  "stylesFile": "styles.css",
+  "shortcutsFile": "shortcuts.json",
+  "modulesDirectory": "modules"
+}
