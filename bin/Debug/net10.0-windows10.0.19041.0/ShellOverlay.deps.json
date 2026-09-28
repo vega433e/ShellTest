@@ -14,6 +14,7 @@
           "Avalonia.Fonts.Inter": "11.3.22",
           "Avalonia.Themes.Fluent": "11.3.22",
           "Microsoft.CodeAnalysis.CSharp.Scripting": "4.14.0",
+          "System.Drawing.Common": "10.0.12",
           "runtimepack.Microsoft.Windows.SDK.NET.Ref": "10.0.19041.57"
         },
         "runtime": {
@@ -562,6 +563,22 @@
           }
         }
       },
+      "Microsoft.Win32.SystemEvents/10.0.12": {
+        "runtime": {
+          "lib/net10.0/Microsoft.Win32.SystemEvents.dll": {
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "10.0.1226.42308"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/net10.0/Microsoft.Win32.SystemEvents.dll": {
+            "rid": "win",
+            "assetType": "runtime",
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "10.0.1226.42308"
+          }
+        }
+      },
       "SkiaSharp/2.88.9": {
         "dependencies": {
           "SkiaSharp.NativeAssets.Win32": "2.88.9",
@@ -626,6 +643,25 @@
             "rid": "win-x86",
             "assetType": "native",
             "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "System.Drawing.Common/10.0.12": {
+        "dependencies": {
+          "Microsoft.Win32.SystemEvents": "10.0.12"
+        },
+        "runtime": {
+          "lib/net10.0/System.Drawing.Common.dll": {
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "10.0.1226.42308"
+          },
+          "lib/net10.0/System.Private.Windows.Core.dll": {
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "10.0.1226.42308"
+          },
+          "lib/net10.0/System.Private.Windows.GdiPlus.dll": {
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "10.0.1226.42308"
           }
         }
       },
@@ -804,6 +840,13 @@
       "path": "microsoft.codeanalysis.scripting.common/4.14.0",
       "hashPath": "microsoft.codeanalysis.scripting.common.4.14.0.nupkg.sha512"
     },
+    "Microsoft.Win32.SystemEvents/10.0.12": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-kdj5cqOwgZCMltEhQ4+WVUoFkMHG08EJfy1MDyS9H+FBg66vTTFyX8YcNl8IQh5wRQv79P+iduQgDGY8ucBR+w==",
+      "path": "microsoft.win32.systemevents/10.0.12",
+      "hashPath": "microsoft.win32.systemevents.10.0.12.nupkg.sha512"
+    },
     "SkiaSharp/2.88.9": {
       "type": "package",
       "serviceable": true,
@@ -831,6 +874,13 @@
       "sha512": "sha512-wb2kYgU7iy84nQLYZwMeJXixvK++GoIuECjU4ECaUKNuflyRlJKyiRhN1MAHswvlvzuvkrjRWlK0Za6+kYQK7w==",
       "path": "skiasharp.nativeassets.win32/2.88.9",
       "hashPath": "skiasharp.nativeassets.win32.2.88.9.nupkg.sha512"
+    },
+    "System.Drawing.Common/10.0.12": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-FBUxiucg2gsnyItbpGgyXI5u8FYLcqdLKS1XJkHHTj3RK1c6kpsJr/Y9i4edUNF7LqCYFrHqpHEvpt8/lNBe9w==",
+      "path": "system.drawing.common/10.0.12",
+      "hashPath": "system.drawing.common.10.0.12.nupkg.sha512"
     },
     "Tmds.DBus.Protocol/0.21.3": {
       "type": "package",

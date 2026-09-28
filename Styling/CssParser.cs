@@ -1,20 +1,11 @@
-using System.Globalization;
-using Avalonia;
-using Avalonia.Media;
 using ShellOverlay.Layout;
 
 namespace ShellOverlay.Styling;
 
-public sealed class CssRule
-{
-    public string Selector { get; init; } = "";
-    public string TypeName { get; init; } = "";
-    public string ClassName { get; init; } = "";
-    public string Id { get; init; } = "";
-    public bool IsHover { get; init; }
-    public Dictionary<string, string> Properties { get; } = new(StringComparer.OrdinalIgnoreCase);
-}
-
+/// <summary>
+/// Тонкий токенизатор CSS: разбивает файл на правила (селектор + свойства).
+/// Парсинг значений — в <see cref="CssValues"/>.
+/// </summary>
 public static class CssParser
 {
     public static List<CssRule> Parse(string css)
@@ -30,15 +21,21 @@ public static class CssParser
             var split = chunk.Split('{', 2);
             if (split.Length != 2) continue;
 
-            var selectors = split[0].Split(',', StringSplitOptions.TrimEntries | StringSplitOptions.RemoveEmptyEntries);
-            var body = split[1];
-            var properties = ParseProperties(body);
+            var selectors = split[0].Split(
+                ',',
+                StringSplitOptions.TrimEntries | StringSplitOptions.RemoveEmptyEntries);
+
+            var properties = ParseProperties(split[1]);
+            if (properties.Count == 0) continue;
 
             foreach (var rawSelector in selectors)
             {
                 var rule = ParseSelector(rawSelector);
+                if (rule is null) continue;
+
                 foreach (var kv in properties)
                     rule.Properties[kv.Key] = kv.Value;
+
                 rules.Add(rule);
             }
         }
@@ -46,32 +43,46 @@ public static class CssParser
         return rules;
     }
 
-    private static CssRule ParseSelector(string raw)
+    // ────────────────────────────────────────────────────────────
+    //  Selectors
+    // ────────────────────────────────────────────────────────────
+
+    private static CssRule? ParseSelector(string raw)
     {
+        raw = raw.Trim();
+        if (raw.Length == 0) return null;
+
         var hover = raw.Contains(":hover", StringComparison.OrdinalIgnoreCase)
-                    || raw.Contains(":pointerover", StringComparison.OrdinalIgnoreCase);
-        raw = raw.Replace(":hover", "", StringComparison.OrdinalIgnoreCase)
-                 .Replace(":pointerover", "", StringComparison.OrdinalIgnoreCase)
-                 .Trim();
+                 || raw.Contains(":pointerover", StringComparison.OrdinalIgnoreCase)
+                 || raw.Contains(":active", StringComparison.OrdinalIgnoreCase);
+
+        var clean = StripPseudoClasses(raw);
+
+        if (clean == "*" || clean.Length == 0)
+            return new CssRule { Selector = raw, IsHover = hover };
 
         var typeName = "";
         var className = "";
         var id = "";
 
-        if (raw == "*")
-        {
-            return new CssRule { Selector = raw, IsHover = hover };
-        }
-
-        var classIdx = raw.IndexOf('.');
-        var idIdx = raw.IndexOf('#');
+        var idIdx = clean.IndexOf('#');
+        var classIdx = clean.IndexOf('.');
 
         if (idIdx >= 0)
         {
-            var rawId = raw[(idIdx + 1)..].Trim();
-            // Must match XmlLayoutLoader.SanitizeIdentifier so selectors line up with controls.
+            var rawId = clean[(idIdx + 1)..].Trim();
+            // Must match XmlLayoutLoader.SanitizeIdentifier.
             id = XmlLayoutLoader.SanitizeIdentifier(rawId);
-            if (idIdx > 0) typeName = raw[..idIdx].Trim();
+            if (idIdx > 0) typeName = clean[..idIdx].Trim();
+        }
+        else if (classIdx >= 0)
+        {
+            className = clean[(classIdx + 1)..].Trim();
+            if (classIdx > 0) typeName = clean[..classIdx].Trim();
+        }
+        else
+        {
+            typeName = clean.Trim();
         }
 
         return new CssRule
@@ -84,17 +95,51 @@ public static class CssParser
         };
     }
 
+    private static string StripPseudoClasses(string s)
+    {
+        var sb = new System.Text.StringBuilder(s.Length);
+        for (var i = 0; i < s.Length; i++)
+        {
+            if (s[i] == ':')
+            {
+                while (i < s.Length && s[i] != ' ' && s[i] != '.' && s[i] != '#')
+                    i++;
+                i--;
+                continue;
+            }
+            sb.Append(s[i]);
+        }
+        return sb.ToString();
+    }
+
+    // ────────────────────────────────────────────────────────────
+    //  Properties
+    // ────────────────────────────────────────────────────────────
+
     private static Dictionary<string, string> ParseProperties(string body)
     {
         var map = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase);
-        foreach (var part in body.Split(';', StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries))
+
+        foreach (var part in body.Split(
+                     ';',
+                     StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries))
         {
             var kv = part.Split(':', 2);
             if (kv.Length != 2) continue;
-            map[kv[0].Trim()] = kv[1].Trim();
+
+            var key = kv[0].Trim();
+            var value = kv[1].Trim();
+            if (key.Length == 0 || value.Length == 0) continue;
+
+            map[key] = value;
         }
+
         return map;
     }
+
+    // ────────────────────────────────────────────────────────────
+    //  Comments
+    // ────────────────────────────────────────────────────────────
 
     private static string StripComments(string css)
     {
@@ -102,95 +147,16 @@ public static class CssParser
         {
             var start = css.IndexOf("/*", StringComparison.Ordinal);
             if (start < 0) break;
+
             var end = css.IndexOf("*/", start + 2, StringComparison.Ordinal);
             if (end < 0)
             {
                 css = css[..start];
                 break;
             }
+
             css = css.Remove(start, end + 2 - start);
         }
         return css;
-    }
-
-    public static bool TryParseColor(string value, out Color color)
-    {
-        color = default;
-        value = value.Trim();
-        if (value.Equals("transparent", StringComparison.OrdinalIgnoreCase))
-        {
-            color = Colors.Transparent;
-            return true;
-        }
-
-        try
-        {
-            color = Color.Parse(value);
-            return true;
-        }
-        catch
-        {
-            return false;
-        }
-    }
-
-    public static bool TryParseThickness(string value, out Thickness thickness)
-    {
-        thickness = default;
-        var parts = SplitUnits(value);
-        try
-        {
-            thickness = parts.Length switch
-            {
-                1 => new Thickness(parts[0]),
-                2 => new Thickness(parts[1], parts[0], parts[1], parts[0]),
-                4 => new Thickness(parts[3], parts[0], parts[1], parts[2]),
-                _ => default,
-            };
-            return parts.Length is 1 or 2 or 4;
-        }
-        catch
-        {
-            return false;
-        }
-    }
-
-    public static bool TryParseDouble(string value, out double number)
-    {
-        var cleaned = value.Replace("px", "", StringComparison.OrdinalIgnoreCase)
-                           .Replace("dip", "", StringComparison.OrdinalIgnoreCase)
-                           .Trim();
-        return double.TryParse(cleaned, NumberStyles.Float, CultureInfo.InvariantCulture, out number);
-    }
-
-    public static bool TryParseTime(string value, out TimeSpan time)
-    {
-        time = TimeSpan.FromMilliseconds(150);
-        var cleaned = value.Trim();
-        if (cleaned.EndsWith("ms", StringComparison.OrdinalIgnoreCase)
-            && double.TryParse(cleaned[..^2], NumberStyles.Float, CultureInfo.InvariantCulture, out var ms))
-        {
-            time = TimeSpan.FromMilliseconds(ms);
-            return true;
-        }
-        if (cleaned.EndsWith('s')
-            && double.TryParse(cleaned[..^1], NumberStyles.Float, CultureInfo.InvariantCulture, out var sec))
-        {
-            time = TimeSpan.FromSeconds(sec);
-            return true;
-        }
-        return false;
-    }
-
-    private static double[] SplitUnits(string value)
-    {
-        var tokens = value.Split(' ', StringSplitOptions.RemoveEmptyEntries);
-        var list = new List<double>(tokens.Length);
-        foreach (var token in tokens)
-        {
-            if (TryParseDouble(token, out var n))
-                list.Add(n);
-        }
-        return [.. list];
     }
 }

@@ -7,6 +7,7 @@ using Avalonia.Layout;
 using ShellOverlay.Logging;
 using ShellOverlay.Models;
 using ShellOverlay.Scripting;
+using ShellOverlay.Shell;
 using ShellOverlay.Styling;
 
 namespace ShellOverlay.Layout;
@@ -218,7 +219,7 @@ public sealed class XmlLayoutLoader
 
     private StackPanel BuildPins()
     {
-        var panel = new StackPanel { Orientation = Orientation.Horizontal, Spacing = 8 };
+        var panel = new StackPanel { Orientation = Orientation.Horizontal, Spacing = 6 };
         panel.Classes.Add("pins");
 
         foreach (var shortcut in _shortcuts)
@@ -226,15 +227,30 @@ public sealed class XmlLayoutLoader
             if (string.IsNullOrWhiteSpace(shortcut.Name) && string.IsNullOrWhiteSpace(shortcut.Path))
                 continue;
 
-            var initial = string.IsNullOrWhiteSpace(shortcut.Name)
-                ? "?"
-                : shortcut.Name.Trim()[..1].ToUpperInvariant();
-
-            var btn = new Button { Content = initial };
+            var btn = new Button();
             btn.Classes.Add("overlay");
             btn.Classes.Add("icon-btn");
             btn.Classes.Add("pin");
             ToolTip.SetTip(btn, shortcut.Name);
+
+            var icon = IconExtractor.Extract(shortcut.Path, small: false);
+            if (icon is not null)
+            {
+                btn.Content = new Image
+                {
+                    Source = icon,
+                    Width = 20,
+                    Height = 20,
+                    Stretch = Avalonia.Media.Stretch.Uniform,
+                };
+            }
+            else
+            {
+                var initial = string.IsNullOrWhiteSpace(shortcut.Name)
+                    ? "?"
+                    : shortcut.Name.Trim()[..1].ToUpperInvariant();
+                btn.Content = initial;
+            }
 
             var cfg = shortcut;
             btn.Click += (_, _) =>

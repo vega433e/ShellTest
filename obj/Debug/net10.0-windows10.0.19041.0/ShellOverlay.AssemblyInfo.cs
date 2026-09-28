@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ShellOverlay")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0766893ba60d79f5edadd4479475b8e022a06759")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bed2e87a955ee573077fccf57d3b1b01f3dc7022")]
 [assembly: System.Reflection.AssemblyProductAttribute("ShellOverlay")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ShellOverlay")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

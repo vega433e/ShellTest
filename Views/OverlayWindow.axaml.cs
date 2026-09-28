@@ -95,18 +95,29 @@ public partial class OverlayWindow : Window
 
     private void ApplyCss()
     {
+        OverlayLog.Info($"ApplyCss: path = {_config.StylesPath}");
+
         if (!File.Exists(_config.StylesPath))
         {
-            OverlayLog.Warn("styles.css not found");
+            OverlayLog.Warn($"styles.css not found at {_config.StylesPath}");
             return;
         }
 
         try
         {
             var css = File.ReadAllText(_config.StylesPath);
+            OverlayLog.Info($"CSS loaded: {css.Length} chars");
+
             var rules = CssParser.Parse(css);
+            OverlayLog.Info($"CSS parsed: {rules.Count} rule(s)");
+
+            var applied = 0;
             foreach (var style in CssStyleBuilder.Build(rules))
+            {
                 Styles.Add(style);
+                applied++;
+            }
+            OverlayLog.Info($"CSS applied: {applied} style(s) to window");
         }
         catch (Exception ex)
         {

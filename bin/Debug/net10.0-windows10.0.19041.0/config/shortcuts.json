@@ -9,8 +9,8 @@
       "path": "explorer.exe"
     },
     {
-      "name": "Edge",
-      "path": "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe"
+      "name": "Chrome",
+      "path": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe"
     },
     {
       "name": "Code",

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "d5TSlrS1VJ4=",
+  "dgSpecHash": "aYupHNVUIxQ=",
   "success": true,
   "projectFilePath": "D:\\Projects\\.Net Projects\\ShellOverlayTest\\ShellOverlay.csproj",
   "expectedPackageFiles": [
@@ -29,11 +29,13 @@
     "C:\\Users\\Vega\\.nuget\\packages\\microsoft.codeanalysis.csharp\\4.14.0\\microsoft.codeanalysis.csharp.4.14.0.nupkg.sha512",
     "C:\\Users\\Vega\\.nuget\\packages\\microsoft.codeanalysis.csharp.scripting\\4.14.0\\microsoft.codeanalysis.csharp.scripting.4.14.0.nupkg.sha512",
     "C:\\Users\\Vega\\.nuget\\packages\\microsoft.codeanalysis.scripting.common\\4.14.0\\microsoft.codeanalysis.scripting.common.4.14.0.nupkg.sha512",
+    "C:\\Users\\Vega\\.nuget\\packages\\microsoft.win32.systemevents\\10.0.12\\microsoft.win32.systemevents.10.0.12.nupkg.sha512",
     "C:\\Users\\Vega\\.nuget\\packages\\skiasharp\\2.88.9\\skiasharp.2.88.9.nupkg.sha512",
     "C:\\Users\\Vega\\.nuget\\packages\\skiasharp.nativeassets.linux\\2.88.9\\skiasharp.nativeassets.linux.2.88.9.nupkg.sha512",
     "C:\\Users\\Vega\\.nuget\\packages\\skiasharp.nativeassets.macos\\2.88.9\\skiasharp.nativeassets.macos.2.88.9.nupkg.sha512",
     "C:\\Users\\Vega\\.nuget\\packages\\skiasharp.nativeassets.webassembly\\2.88.9\\skiasharp.nativeassets.webassembly.2.88.9.nupkg.sha512",
     "C:\\Users\\Vega\\.nuget\\packages\\skiasharp.nativeassets.win32\\2.88.9\\skiasharp.nativeassets.win32.2.88.9.nupkg.sha512",
+    "C:\\Users\\Vega\\.nuget\\packages\\system.drawing.common\\10.0.12\\system.drawing.common.10.0.12.nupkg.sha512",
     "C:\\Users\\Vega\\.nuget\\packages\\tmds.dbus.protocol\\0.21.3\\tmds.dbus.protocol.0.21.3.nupkg.sha512",
     "C:\\Users\\Vega\\.nuget\\packages\\microsoft.windows.sdk.net.ref\\10.0.19041.57\\microsoft.windows.sdk.net.ref.10.0.19041.57.nupkg.sha512"
   ],

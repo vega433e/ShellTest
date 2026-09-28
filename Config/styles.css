@@ -1,12 +1,13 @@
 /* ============================================================
-   Панель
+   Панель — капсула с градиентом и тенью
    ============================================================ */
 .bar {
-    background-color: #16161f;
-    border-radius: 14px;
+    background: linear-gradient(180deg, #232336 0%, #12121c 100%);
+    border-radius: 16px;
     border-width: 1px;
-    border-color: #2e2e46;
+    border-color: #3a3a56;
     padding: 4px 10px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.55);
 }
 
 /* ============================================================
@@ -15,87 +16,98 @@
 .start {
     width: 34px;
     height: 34px;
-    border-radius: 9px;
-    background-color: #4b6cf0;
+    border-radius: 10px;
+    background: linear-gradient(180deg, #5b81ff 0%, #3d5ff0 100%);
     color: #ffffff;
     font-size: 16px;
     font-weight: 700;
+    padding: 0;
     transform: translateY(0px);
-    transition: background 120ms, transform 100ms;
+    transition: transform 100ms, background 140ms, box-shadow 140ms;
 }
 
     .start:hover {
-        background-color: #5f7eff;
+        background: linear-gradient(180deg, #7a99ff 0%, #5b81ff 100%);
         transform: translateY(-1px);
+        box-shadow: 0 4px 14px rgba(91, 129, 255, 0.5);
     }
 
 /* ============================================================
-   Общие кнопки и пины
+   Пины и прочие иконки-кнопки
    ============================================================ */
 .icon-btn {
-    width: 32px;
-    height: 32px;
-    border-radius: 8px;
-    background-color: #1e1e2c;
-    color: #b8b8d0;
+    width: 34px;
+    height: 34px;
+    border-radius: 10px;
+    background-color: #1c1c2a;
+    color: #b9b9d0;
     font-size: 12px;
     font-weight: 700;
+    padding: 0;
     transform: translateY(0px);
-    transition: background 120ms, color 120ms, transform 100ms;
+    transition: transform 100ms, background 120ms, box-shadow 120ms, color 120ms;
 }
 
     .icon-btn:hover {
-        background-color: #2a2a3e;
+        background-color: #2a2a42;
         color: #ffffff;
         transform: translateY(-1px);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.45);
     }
 
 .pin {
-    border-radius: 8px;
+    border-radius: 10px;
 }
 
 /* ============================================================
    Разделитель
    ============================================================ */
 .divider {
-    background-color: #2a2a3e;
+    background-color: #2f2f46;
     width: 1px;
+    margin: 8px 6px;
 }
 
 /* ============================================================
    Часы и дата
    ============================================================ */
 .clock-stack {
-    padding: 0 10px;
+    padding: 0 12px;
 }
 
 .time {
     color: #ffffff;
     font-size: 13px;
     font-weight: 600;
+    letter-spacing: 0.4px;
 }
 
 .date {
-    color: #6a6a88;
+    color: #6c6c8c;
     font-size: 10px;
     font-weight: 500;
+    letter-spacing: 0.2px;
 }
 
 /* ============================================================
    Кнопка выхода
    ============================================================ */
 .exit {
-    width: 30px;
+    width: 34px;
     height: 34px;
-    border-radius: 9px;
-    background-color: #2a1418;
-    color: #ff5577;
+    border-radius: 10px;
+    background-color: #2b171d;
+    color: #ff617a;
     font-size: 13px;
     font-weight: 700;
-    transition: background 120ms, color 120ms;
+    padding: 0;
+    transform: translateY(0px);
+    transition: transform 100ms, background 120ms, color 120ms, box-shadow 120ms;
 }
 
     .exit:hover {
-        background-color: #4a1c24;
-        color: #ff8099;
+        background-color: #4a2029;
+        color: #ff8fa0;
+        transform: translateY(-1px);
+        box-shadow: 0 4px 12px rgba(255, 97, 122, 0.35);
     }

@@ -148,3 +148,8 @@ D:\Projects\.Net Projects\ShellOverlayTest\obj\Debug\net10.0-windows10.0.19041.0
 D:\Projects\.Net Projects\ShellOverlayTest\obj\Debug\net10.0-windows10.0.19041.0\ShellOverlay.genruntimeconfig.cache
 D:\Projects\.Net Projects\ShellOverlayTest\obj\Debug\net10.0-windows10.0.19041.0\ref\ShellOverlay.dll
 D:\Projects\.Net Projects\ShellOverlayTest\bin\Debug\net10.0-windows10.0.19041.0\config\modules\Date.csx
+D:\Projects\.Net Projects\ShellOverlayTest\bin\Debug\net10.0-windows10.0.19041.0\Microsoft.Win32.SystemEvents.dll
+D:\Projects\.Net Projects\ShellOverlayTest\bin\Debug\net10.0-windows10.0.19041.0\System.Drawing.Common.dll
+D:\Projects\.Net Projects\ShellOverlayTest\bin\Debug\net10.0-windows10.0.19041.0\System.Private.Windows.Core.dll
+D:\Projects\.Net Projects\ShellOverlayTest\bin\Debug\net10.0-windows10.0.19041.0\System.Private.Windows.GdiPlus.dll
+D:\Projects\.Net Projects\ShellOverlayTest\bin\Debug\net10.0-windows10.0.19041.0\runtimes\win\lib\net10.0\Microsoft.Win32.SystemEvents.dll

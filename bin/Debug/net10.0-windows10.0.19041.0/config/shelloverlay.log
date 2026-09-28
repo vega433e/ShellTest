@@ -46,3 +46,294 @@
 2026-09-28 18:29:34.339 [INFO] Loaded module 'exit'
 2026-09-28 18:29:34.492 [INFO] Loaded module 'start'
 2026-09-28 18:29:34.495 [INFO] [csx] Start button module ready
+2026-09-28 19:57:59.472 [INFO] Starting ShellOverlay
+2026-09-28 19:57:59.931 [INFO] System shell hidden (2 window(s))
+2026-09-28 19:58:01.931 [INFO] Loaded module 'clock'
+2026-09-28 19:58:02.087 [INFO] Loaded module 'Date'
+2026-09-28 19:58:02.357 [INFO] Loaded module 'exit'
+2026-09-28 19:58:02.513 [INFO] Loaded module 'start'
+2026-09-28 19:58:02.515 [INFO] [csx] Start button module ready
+2026-09-28 19:58:04.199 [INFO] [csx] Opening Windows Start menu
+2026-09-28 20:02:08.146 [INFO] Starting ShellOverlay
+2026-09-28 20:02:08.466 [INFO] ApplyCss: path = D:\Projects\.Net Projects\ShellOverlayTest\bin\Debug\net10.0-windows10.0.19041.0\config\styles.css
+2026-09-28 20:02:08.468 [INFO] CSS loaded: 875 chars
+2026-09-28 20:02:08.470 [INFO] CSS parsed: 5 rule(s)
+2026-09-28 20:02:08.491 [INFO] CSS selector '.bar' → 6 setter(s)
+2026-09-28 20:02:08.495 [INFO] CSS selector '.start' → 10 setter(s)
+2026-09-28 20:02:08.496 [INFO] CSS selector '.start:hover' → 2 setter(s)
+2026-09-28 20:02:08.496 [INFO] CSS selector '.time' → 4 setter(s)
+2026-09-28 20:02:08.496 [INFO] CSS selector '.date' → 3 setter(s)
+2026-09-28 20:02:08.497 [INFO] CSS applied: 5 style(s) to window
+2026-09-28 20:02:08.503 [INFO] System shell hidden (2 window(s))
+2026-09-28 20:02:10.101 [INFO] Loaded module 'clock'
+2026-09-28 20:02:10.229 [INFO] Loaded module 'Date'
+2026-09-28 20:02:10.434 [INFO] Loaded module 'exit'
+2026-09-28 20:02:10.575 [INFO] Loaded module 'start'
+2026-09-28 20:02:10.577 [INFO] [csx] Start button module ready
+2026-09-28 20:02:58.494 [INFO] [csx] Exit requested from overlay
+2026-09-28 20:02:58.546 [INFO] System shell restored
+2026-09-28 20:02:58.628 [WARN] Module 'exit' OnClick timed out (100ms)
+2026-09-28 20:06:31.962 [INFO] Starting ShellOverlay
+2026-09-28 20:06:32.276 [INFO] ApplyCss: path = D:\Projects\.Net Projects\ShellOverlayTest\bin\Debug\net10.0-windows10.0.19041.0\config\styles.css
+2026-09-28 20:06:32.277 [INFO] CSS loaded: 875 chars
+2026-09-28 20:06:32.279 [INFO] CSS parsed: 5 rule(s)
+2026-09-28 20:06:32.299 [INFO] CSS selector '.bar' → 6 setter(s)
+2026-09-28 20:06:32.304 [INFO] CSS selector '.start' → 10 setter(s)
+2026-09-28 20:06:32.304 [INFO] CSS selector '.start:hover' → 2 setter(s)
+2026-09-28 20:06:32.305 [INFO] CSS selector '.time' → 4 setter(s)
+2026-09-28 20:06:32.305 [INFO] CSS selector '.date' → 3 setter(s)
+2026-09-28 20:06:32.305 [INFO] CSS applied: 5 style(s) to window
+2026-09-28 20:06:32.312 [INFO] System shell hidden (2 window(s))
+2026-09-28 20:06:39.381 [INFO] Starting ShellOverlay
+2026-09-28 20:06:39.679 [INFO] ApplyCss: path = D:\Projects\.Net Projects\ShellOverlayTest\bin\Debug\net10.0-windows10.0.19041.0\config\styles.css
+2026-09-28 20:06:39.680 [INFO] CSS loaded: 875 chars
+2026-09-28 20:06:39.681 [INFO] CSS parsed: 5 rule(s)
+2026-09-28 20:06:39.706 [INFO] CSS selector '.bar' → 6 setter(s)
+2026-09-28 20:06:39.713 [INFO] CSS selector '.start' → 10 setter(s)
+2026-09-28 20:06:39.714 [INFO] CSS selector '.start:hover' → 2 setter(s)
+2026-09-28 20:06:39.714 [INFO] CSS selector '.time' → 4 setter(s)
+2026-09-28 20:06:39.715 [INFO] CSS selector '.date' → 3 setter(s)
+2026-09-28 20:06:39.715 [INFO] CSS applied: 5 style(s) to window
+2026-09-28 20:06:39.722 [INFO] System shell hidden (2 window(s))
+2026-09-28 20:07:23.590 [INFO] Starting ShellOverlay
+2026-09-28 20:07:23.894 [INFO] ApplyCss: path = D:\Projects\.Net Projects\ShellOverlayTest\bin\Debug\net10.0-windows10.0.19041.0\config\styles.css
+2026-09-28 20:07:23.894 [INFO] CSS loaded: 875 chars
+2026-09-28 20:07:23.896 [INFO] CSS parsed: 5 rule(s)
+2026-09-28 20:07:23.918 [INFO] CSS selector '.bar' → 6 setter(s)
+2026-09-28 20:07:23.922 [INFO] CSS selector '.start' → 10 setter(s)
+2026-09-28 20:07:23.922 [INFO] CSS selector '.start:hover' → 2 setter(s)
+2026-09-28 20:07:23.923 [INFO] CSS selector '.time' → 4 setter(s)
+2026-09-28 20:07:23.923 [INFO] CSS selector '.date' → 3 setter(s)
+2026-09-28 20:07:23.923 [INFO] CSS applied: 5 style(s) to window
+2026-09-28 20:07:23.929 [INFO] System shell hidden (2 window(s))
+2026-09-28 20:14:44.125 [INFO] Starting ShellOverlay
+2026-09-28 20:14:44.487 [INFO] ApplyCss: path = D:\Projects\.Net Projects\ShellOverlayTest\bin\Debug\net10.0-windows10.0.19041.0\config\styles.css
+2026-09-28 20:14:44.487 [INFO] CSS loaded: 875 chars
+2026-09-28 20:14:44.489 [INFO] CSS parsed: 5 rule(s)
+2026-09-28 20:14:44.508 [INFO] CSS: '.bar' → 12 setter(s)
+2026-09-28 20:14:44.514 [INFO] CSS: '.start' → 16 setter(s)
+2026-09-28 20:14:44.515 [INFO] CSS: '.start:hover' → 4 setter(s)
+2026-09-28 20:14:44.515 [INFO] CSS: '.time' → 7 setter(s)
+2026-09-28 20:14:44.516 [INFO] CSS: '.date' → 6 setter(s)
+2026-09-28 20:14:44.517 [INFO] CSS applied: 5 style(s) to window
+2026-09-28 20:14:44.524 [INFO] System shell hidden (2 window(s))
+2026-09-28 20:17:49.384 [INFO] Starting ShellOverlay
+2026-09-28 20:17:49.690 [INFO] ApplyCss: path = D:\Projects\.Net Projects\ShellOverlayTest\bin\Debug\net10.0-windows10.0.19041.0\config\styles.css
+2026-09-28 20:17:49.691 [INFO] CSS loaded: 875 chars
+2026-09-28 20:17:49.694 [INFO] CSS parsed: 5 rule(s)
+2026-09-28 20:17:49.718 [INFO] CSS: '.bar' → Border (4 setter(s))
+2026-09-28 20:17:49.721 [INFO] CSS: '.bar' → TemplatedControl (5 setter(s))
+2026-09-28 20:17:49.722 [INFO] CSS: '.bar' → Panel (1 setter(s))
+2026-09-28 20:17:49.722 [INFO] CSS: '.bar' → Decorator (1 setter(s))
+2026-09-28 20:17:49.722 [INFO] CSS: '.bar' → TextBlock (1 setter(s))
+2026-09-28 20:17:49.728 [WARN] CSS: no selector for type Layoutable in '.start'
+2026-09-28 20:17:49.729 [INFO] CSS: '.start' → TemplatedControl (5 setter(s))
+2026-09-28 20:17:49.729 [INFO] CSS: '.start' → Border (2 setter(s))
+2026-09-28 20:17:49.729 [INFO] CSS: '.start' → Panel (1 setter(s))
+2026-09-28 20:17:49.730 [INFO] CSS: '.start' → TextBlock (3 setter(s))
+2026-09-28 20:17:49.730 [WARN] CSS: no selector for type InputElement in '.start'
+2026-09-28 20:17:49.730 [WARN] CSS: no selector for type Visual in '.start'
+2026-09-28 20:17:49.730 [WARN] CSS: no selector for type Animatable in '.start'
+2026-09-28 20:17:49.730 [INFO] CSS: '.start:hover' → Border (1 setter(s))
+2026-09-28 20:17:49.731 [INFO] CSS: '.start:hover' → TemplatedControl (1 setter(s))
+2026-09-28 20:17:49.731 [INFO] CSS: '.start:hover' → Panel (1 setter(s))
+2026-09-28 20:17:49.731 [WARN] CSS: no selector for type Visual in '.start:hover'
+2026-09-28 20:17:49.732 [INFO] CSS: '.time' → TemplatedControl (3 setter(s))
+2026-09-28 20:17:49.732 [INFO] CSS: '.time' → TextBlock (4 setter(s))
+2026-09-28 20:17:49.732 [INFO] CSS: '.date' → TemplatedControl (3 setter(s))
+2026-09-28 20:17:49.733 [INFO] CSS: '.date' → TextBlock (3 setter(s))
+2026-09-28 20:17:49.733 [INFO] CSS applied: 16 style(s) to window
+2026-09-28 20:17:49.738 [INFO] System shell hidden (2 window(s))
+2026-09-28 20:17:51.448 [INFO] Loaded module 'clock'
+2026-09-28 20:17:51.585 [INFO] Loaded module 'Date'
+2026-09-28 20:17:51.788 [INFO] Loaded module 'exit'
+2026-09-28 20:17:51.934 [INFO] Loaded module 'start'
+2026-09-28 20:17:51.937 [INFO] [csx] Start button module ready
+2026-09-28 20:19:26.965 [INFO] [csx] Opening Windows Start menu
+2026-09-28 20:23:00.061 [INFO] Starting ShellOverlay
+2026-09-28 20:23:00.782 [INFO] ApplyCss: path = D:\Projects\.Net Projects\ShellOverlayTest\bin\Debug\net10.0-windows10.0.19041.0\config\styles.css
+2026-09-28 20:23:00.789 [INFO] CSS loaded: 1392 chars
+2026-09-28 20:23:00.790 [INFO] CSS parsed: 8 rule(s)
+2026-09-28 20:23:00.807 [INFO] CSS: '.bar' → Border (4 setter(s))
+2026-09-28 20:23:00.811 [INFO] CSS: '.bar' → TemplatedControl (5 setter(s))
+2026-09-28 20:23:00.811 [INFO] CSS: '.bar' → Panel (1 setter(s))
+2026-09-28 20:23:00.811 [INFO] CSS: '.bar' → Decorator (1 setter(s))
+2026-09-28 20:23:00.812 [INFO] CSS: '.bar' → TextBlock (1 setter(s))
+2026-09-28 20:23:00.817 [WARN] CSS: no selector for type Layoutable in '.start'
+2026-09-28 20:23:00.817 [INFO] CSS: '.start' → TemplatedControl (5 setter(s))
+2026-09-28 20:23:00.817 [INFO] CSS: '.start' → Border (2 setter(s))
+2026-09-28 20:23:00.817 [INFO] CSS: '.start' → Panel (1 setter(s))
+2026-09-28 20:23:00.818 [INFO] CSS: '.start' → TextBlock (3 setter(s))
+2026-09-28 20:23:00.818 [WARN] CSS: no selector for type InputElement in '.start'
+2026-09-28 20:23:00.818 [WARN] CSS: no selector for type Visual in '.start'
+2026-09-28 20:23:00.818 [WARN] CSS: no selector for type Animatable in '.start'
+2026-09-28 20:23:00.819 [INFO] CSS: '.start:hover' → Border (1 setter(s))
+2026-09-28 20:23:00.819 [INFO] CSS: '.start:hover' → TemplatedControl (1 setter(s))
+2026-09-28 20:23:00.819 [INFO] CSS: '.start:hover' → Panel (1 setter(s))
+2026-09-28 20:23:00.819 [WARN] CSS: no selector for type Visual in '.start:hover'
+2026-09-28 20:23:00.820 [INFO] CSS: '.time' → TemplatedControl (3 setter(s))
+2026-09-28 20:23:00.820 [INFO] CSS: '.time' → TextBlock (4 setter(s))
+2026-09-28 20:23:00.821 [INFO] CSS: '.date' → TemplatedControl (3 setter(s))
+2026-09-28 20:23:00.821 [INFO] CSS: '.date' → TextBlock (3 setter(s))
+2026-09-28 20:23:00.821 [WARN] CSS: no selector for type Layoutable in '.icon-btn'
+2026-09-28 20:23:00.822 [INFO] CSS: '.icon-btn' → TemplatedControl (6 setter(s))
+2026-09-28 20:23:00.822 [INFO] CSS: '.icon-btn' → Border (2 setter(s))
+2026-09-28 20:23:00.822 [INFO] CSS: '.icon-btn' → Panel (1 setter(s))
+2026-09-28 20:23:00.823 [INFO] CSS: '.icon-btn' → TextBlock (4 setter(s))
+2026-09-28 20:23:00.823 [INFO] CSS: '.icon-btn' → Decorator (1 setter(s))
+2026-09-28 20:23:00.823 [WARN] CSS: no selector for type Visual in '.icon-btn'
+2026-09-28 20:23:00.823 [WARN] CSS: no selector for type Animatable in '.icon-btn'
+2026-09-28 20:23:00.824 [INFO] CSS: '.icon-btn:hover' → Border (1 setter(s))
+2026-09-28 20:23:00.824 [INFO] CSS: '.icon-btn:hover' → TemplatedControl (2 setter(s))
+2026-09-28 20:23:00.824 [INFO] CSS: '.icon-btn:hover' → Panel (1 setter(s))
+2026-09-28 20:23:00.825 [INFO] CSS: '.icon-btn:hover' → TextBlock (1 setter(s))
+2026-09-28 20:23:00.825 [WARN] CSS: no selector for type Visual in '.icon-btn:hover'
+2026-09-28 20:23:00.825 [INFO] CSS: '.pin' → TemplatedControl (1 setter(s))
+2026-09-28 20:23:00.826 [INFO] CSS: '.pin' → Border (1 setter(s))
+2026-09-28 20:23:00.826 [INFO] CSS applied: 27 style(s) to window
+2026-09-28 20:23:00.832 [INFO] System shell hidden (2 window(s))
+2026-09-28 20:23:02.654 [INFO] Loaded module 'clock'
+2026-09-28 20:23:02.806 [INFO] Loaded module 'Date'
+2026-09-28 20:23:03.014 [INFO] Loaded module 'exit'
+2026-09-28 20:23:03.191 [INFO] Loaded module 'start'
+2026-09-28 20:23:03.194 [INFO] [csx] Start button module ready
+2026-09-28 20:23:26.311 [INFO] [csx] Opening Windows Start menu
+2026-09-28 20:23:52.527 [INFO] [csx] Exit requested from overlay
+2026-09-28 20:23:52.583 [INFO] System shell restored
+2026-09-28 20:27:09.165 [INFO] Starting ShellOverlay
+2026-09-28 20:27:09.512 [INFO] ApplyCss: path = D:\Projects\.Net Projects\ShellOverlayTest\bin\Debug\net10.0-windows10.0.19041.0\config\styles.css
+2026-09-28 20:27:09.519 [INFO] CSS loaded: 3088 chars
+2026-09-28 20:27:09.521 [INFO] CSS parsed: 12 rule(s)
+2026-09-28 20:27:09.547 [INFO] CSS: '.bar' → Border (4 setter(s))
+2026-09-28 20:27:09.552 [INFO] CSS: '.bar' → TemplatedControl (5 setter(s))
+2026-09-28 20:27:09.553 [INFO] CSS: '.bar' → Panel (1 setter(s))
+2026-09-28 20:27:09.553 [INFO] CSS: '.bar' → Decorator (1 setter(s))
+2026-09-28 20:27:09.554 [INFO] CSS: '.bar' → TextBlock (1 setter(s))
+2026-09-28 20:27:09.560 [WARN] CSS: no selector for type Layoutable in '.start'
+2026-09-28 20:27:09.560 [INFO] CSS: '.start' → TemplatedControl (6 setter(s))
+2026-09-28 20:27:09.561 [INFO] CSS: '.start' → Border (2 setter(s))
+2026-09-28 20:27:09.561 [INFO] CSS: '.start' → Panel (1 setter(s))
+2026-09-28 20:27:09.561 [INFO] CSS: '.start' → TextBlock (4 setter(s))
+2026-09-28 20:27:09.562 [INFO] CSS: '.start' → Decorator (1 setter(s))
+2026-09-28 20:27:09.562 [WARN] CSS: no selector for type Visual in '.start'
+2026-09-28 20:27:09.562 [WARN] CSS: no selector for type Animatable in '.start'
+2026-09-28 20:27:09.562 [INFO] CSS: '.start:hover' → Border (1 setter(s))
+2026-09-28 20:27:09.563 [INFO] CSS: '.start:hover' → TemplatedControl (1 setter(s))
+2026-09-28 20:27:09.563 [INFO] CSS: '.start:hover' → Panel (1 setter(s))
+2026-09-28 20:27:09.563 [WARN] CSS: no selector for type Visual in '.start:hover'
+2026-09-28 20:27:09.564 [WARN] CSS: no selector for type Layoutable in '.icon-btn'
+2026-09-28 20:27:09.564 [INFO] CSS: '.icon-btn' → TemplatedControl (6 setter(s))
+2026-09-28 20:27:09.564 [INFO] CSS: '.icon-btn' → Border (2 setter(s))
+2026-09-28 20:27:09.564 [INFO] CSS: '.icon-btn' → Panel (1 setter(s))
+2026-09-28 20:27:09.564 [INFO] CSS: '.icon-btn' → TextBlock (4 setter(s))
+2026-09-28 20:27:09.565 [INFO] CSS: '.icon-btn' → Decorator (1 setter(s))
+2026-09-28 20:27:09.565 [WARN] CSS: no selector for type Visual in '.icon-btn'
+2026-09-28 20:27:09.565 [WARN] CSS: no selector for type Animatable in '.icon-btn'
+2026-09-28 20:27:09.565 [INFO] CSS: '.icon-btn:hover' → Border (1 setter(s))
+2026-09-28 20:27:09.566 [INFO] CSS: '.icon-btn:hover' → TemplatedControl (2 setter(s))
+2026-09-28 20:27:09.566 [INFO] CSS: '.icon-btn:hover' → Panel (1 setter(s))
+2026-09-28 20:27:09.566 [INFO] CSS: '.icon-btn:hover' → TextBlock (1 setter(s))
+2026-09-28 20:27:09.566 [WARN] CSS: no selector for type Visual in '.icon-btn:hover'
+2026-09-28 20:27:09.567 [INFO] CSS: '.pin' → TemplatedControl (1 setter(s))
+2026-09-28 20:27:09.567 [INFO] CSS: '.pin' → Border (1 setter(s))
+2026-09-28 20:27:09.568 [INFO] CSS: '.divider' → Border (1 setter(s))
+2026-09-28 20:27:09.568 [INFO] CSS: '.divider' → TemplatedControl (1 setter(s))
+2026-09-28 20:27:09.568 [INFO] CSS: '.divider' → Panel (1 setter(s))
+2026-09-28 20:27:09.569 [WARN] CSS: no selector for type Layoutable in '.divider'
+2026-09-28 20:27:09.569 [WARN] CSS: unknown property 'spacing' in '.clock-stack'
+2026-09-28 20:27:09.569 [INFO] CSS: '.clock-stack' → TemplatedControl (1 setter(s))
+2026-09-28 20:27:09.569 [INFO] CSS: '.clock-stack' → Decorator (1 setter(s))
+2026-09-28 20:27:09.570 [INFO] CSS: '.clock-stack' → TextBlock (1 setter(s))
+2026-09-28 20:27:09.570 [INFO] CSS: '.time' → TemplatedControl (3 setter(s))
+2026-09-28 20:27:09.571 [INFO] CSS: '.time' → TextBlock (4 setter(s))
+2026-09-28 20:27:09.571 [INFO] CSS: '.date' → TemplatedControl (3 setter(s))
+2026-09-28 20:27:09.571 [INFO] CSS: '.date' → TextBlock (4 setter(s))
+2026-09-28 20:27:09.572 [WARN] CSS: no selector for type Layoutable in '.exit'
+2026-09-28 20:27:09.572 [INFO] CSS: '.exit' → TemplatedControl (6 setter(s))
+2026-09-28 20:27:09.572 [INFO] CSS: '.exit' → Border (2 setter(s))
+2026-09-28 20:27:09.572 [INFO] CSS: '.exit' → Panel (1 setter(s))
+2026-09-28 20:27:09.572 [INFO] CSS: '.exit' → TextBlock (4 setter(s))
+2026-09-28 20:27:09.573 [INFO] CSS: '.exit' → Decorator (1 setter(s))
+2026-09-28 20:27:09.573 [WARN] CSS: no selector for type Visual in '.exit'
+2026-09-28 20:27:09.573 [WARN] CSS: no selector for type Animatable in '.exit'
+2026-09-28 20:27:09.573 [INFO] CSS: '.exit:hover' → Border (1 setter(s))
+2026-09-28 20:27:09.574 [INFO] CSS: '.exit:hover' → TemplatedControl (2 setter(s))
+2026-09-28 20:27:09.574 [INFO] CSS: '.exit:hover' → Panel (1 setter(s))
+2026-09-28 20:27:09.575 [INFO] CSS: '.exit:hover' → TextBlock (1 setter(s))
+2026-09-28 20:27:09.575 [WARN] CSS: no selector for type Visual in '.exit:hover'
+2026-09-28 20:27:09.575 [INFO] CSS applied: 43 style(s) to window
+2026-09-28 20:27:09.581 [INFO] System shell hidden (2 window(s))
+2026-09-28 20:27:11.231 [INFO] Loaded module 'clock'
+2026-09-28 20:27:11.371 [INFO] Loaded module 'Date'
+2026-09-28 20:27:11.570 [INFO] Loaded module 'exit'
+2026-09-28 20:27:11.710 [INFO] Loaded module 'start'
+2026-09-28 20:27:11.712 [INFO] [csx] Start button module ready
+2026-09-28 20:29:36.319 [INFO] Starting ShellOverlay
+2026-09-28 20:29:36.780 [INFO] ApplyCss: path = D:\Projects\.Net Projects\ShellOverlayTest\bin\Debug\net10.0-windows10.0.19041.0\config\styles.css
+2026-09-28 20:29:36.787 [INFO] CSS loaded: 3071 chars
+2026-09-28 20:29:36.788 [INFO] CSS parsed: 12 rule(s)
+2026-09-28 20:29:36.810 [INFO] CSS: '.bar' → Border (4 setter(s))
+2026-09-28 20:29:36.814 [INFO] CSS: '.bar' → TemplatedControl (5 setter(s))
+2026-09-28 20:29:36.815 [INFO] CSS: '.bar' → Panel (1 setter(s))
+2026-09-28 20:29:36.815 [INFO] CSS: '.bar' → Decorator (1 setter(s))
+2026-09-28 20:29:36.815 [INFO] CSS: '.bar' → TextBlock (1 setter(s))
+2026-09-28 20:29:36.821 [INFO] CSS: '.start' → Layoutable (2 setter(s))
+2026-09-28 20:29:36.821 [INFO] CSS: '.start' → TemplatedControl (6 setter(s))
+2026-09-28 20:29:36.822 [INFO] CSS: '.start' → Border (2 setter(s))
+2026-09-28 20:29:36.822 [INFO] CSS: '.start' → Panel (1 setter(s))
+2026-09-28 20:29:36.822 [INFO] CSS: '.start' → TextBlock (4 setter(s))
+2026-09-28 20:29:36.822 [INFO] CSS: '.start' → Decorator (1 setter(s))
+2026-09-28 20:29:36.823 [INFO] CSS: '.start' → Visual (1 setter(s))
+2026-09-28 20:29:36.823 [INFO] CSS: '.start' → Animatable (1 setter(s))
+2026-09-28 20:29:36.823 [INFO] CSS: '.start:hover' → Border (1 setter(s))
+2026-09-28 20:29:36.824 [INFO] CSS: '.start:hover' → TemplatedControl (1 setter(s))
+2026-09-28 20:29:36.824 [INFO] CSS: '.start:hover' → Panel (1 setter(s))
+2026-09-28 20:29:36.824 [INFO] CSS: '.start:hover' → Visual (1 setter(s))
+2026-09-28 20:29:36.825 [INFO] CSS: '.icon-btn' → Layoutable (2 setter(s))
+2026-09-28 20:29:36.825 [INFO] CSS: '.icon-btn' → TemplatedControl (6 setter(s))
+2026-09-28 20:29:36.825 [INFO] CSS: '.icon-btn' → Border (2 setter(s))
+2026-09-28 20:29:36.826 [INFO] CSS: '.icon-btn' → Panel (1 setter(s))
+2026-09-28 20:29:36.826 [INFO] CSS: '.icon-btn' → TextBlock (4 setter(s))
+2026-09-28 20:29:36.826 [INFO] CSS: '.icon-btn' → Decorator (1 setter(s))
+2026-09-28 20:29:36.826 [INFO] CSS: '.icon-btn' → Visual (1 setter(s))
+2026-09-28 20:29:36.827 [INFO] CSS: '.icon-btn' → Animatable (1 setter(s))
+2026-09-28 20:29:36.828 [INFO] CSS: '.icon-btn:hover' → Border (1 setter(s))
+2026-09-28 20:29:36.829 [INFO] CSS: '.icon-btn:hover' → TemplatedControl (2 setter(s))
+2026-09-28 20:29:36.829 [INFO] CSS: '.icon-btn:hover' → Panel (1 setter(s))
+2026-09-28 20:29:36.829 [INFO] CSS: '.icon-btn:hover' → TextBlock (1 setter(s))
+2026-09-28 20:29:36.830 [INFO] CSS: '.icon-btn:hover' → Visual (1 setter(s))
+2026-09-28 20:29:36.830 [INFO] CSS: '.pin' → TemplatedControl (1 setter(s))
+2026-09-28 20:29:36.830 [INFO] CSS: '.pin' → Border (1 setter(s))
+2026-09-28 20:29:36.832 [INFO] CSS: '.divider' → Border (1 setter(s))
+2026-09-28 20:29:36.832 [INFO] CSS: '.divider' → TemplatedControl (1 setter(s))
+2026-09-28 20:29:36.833 [INFO] CSS: '.divider' → Panel (1 setter(s))
+2026-09-28 20:29:36.833 [INFO] CSS: '.divider' → Layoutable (2 setter(s))
+2026-09-28 20:29:36.833 [INFO] CSS: '.clock-stack' → TemplatedControl (1 setter(s))
+2026-09-28 20:29:36.834 [INFO] CSS: '.clock-stack' → Decorator (1 setter(s))
+2026-09-28 20:29:36.834 [INFO] CSS: '.clock-stack' → TextBlock (1 setter(s))
+2026-09-28 20:29:36.835 [INFO] CSS: '.time' → TemplatedControl (3 setter(s))
+2026-09-28 20:29:36.835 [INFO] CSS: '.time' → TextBlock (4 setter(s))
+2026-09-28 20:29:36.835 [INFO] CSS: '.date' → TemplatedControl (3 setter(s))
+2026-09-28 20:29:36.836 [INFO] CSS: '.date' → TextBlock (4 setter(s))
+2026-09-28 20:29:36.836 [INFO] CSS: '.exit' → Layoutable (2 setter(s))
+2026-09-28 20:29:36.836 [INFO] CSS: '.exit' → TemplatedControl (6 setter(s))
+2026-09-28 20:29:36.837 [INFO] CSS: '.exit' → Border (2 setter(s))
+2026-09-28 20:29:36.837 [INFO] CSS: '.exit' → Panel (1 setter(s))
+2026-09-28 20:29:36.837 [INFO] CSS: '.exit' → TextBlock (4 setter(s))
+2026-09-28 20:29:36.837 [INFO] CSS: '.exit' → Decorator (1 setter(s))
+2026-09-28 20:29:36.838 [INFO] CSS: '.exit' → Visual (1 setter(s))
+2026-09-28 20:29:36.838 [INFO] CSS: '.exit' → Animatable (1 setter(s))
+2026-09-28 20:29:36.838 [INFO] CSS: '.exit:hover' → Border (1 setter(s))
+2026-09-28 20:29:36.839 [INFO] CSS: '.exit:hover' → TemplatedControl (2 setter(s))
+2026-09-28 20:29:36.839 [INFO] CSS: '.exit:hover' → Panel (1 setter(s))
+2026-09-28 20:29:36.839 [INFO] CSS: '.exit:hover' → TextBlock (1 setter(s))
+2026-09-28 20:29:36.840 [INFO] CSS: '.exit:hover' → Visual (1 setter(s))
+2026-09-28 20:29:36.840 [INFO] CSS applied: 56 style(s) to window
+2026-09-28 20:29:36.846 [INFO] System shell hidden (2 window(s))
+2026-09-28 20:29:38.511 [INFO] Loaded module 'clock'
+2026-09-28 20:29:38.647 [INFO] Loaded module 'Date'
+2026-09-28 20:29:38.845 [INFO] Loaded module 'exit'
+2026-09-28 20:29:38.992 [INFO] Loaded module 'start'
+2026-09-28 20:29:38.994 [INFO] [csx] Start button module ready
+2026-09-28 20:39:08.141 [INFO] [csx] Exit requested from overlay
+2026-09-28 20:39:08.185 [INFO] System shell restored

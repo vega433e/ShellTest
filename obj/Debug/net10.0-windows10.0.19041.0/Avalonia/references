@@ -33,6 +33,7 @@ C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\10.0.12\ref\net10.0\Micr
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\10.0.12\ref\net10.0\Microsoft.VisualBasic.dll
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\10.0.12\ref\net10.0\Microsoft.Win32.Primitives.dll
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\10.0.12\ref\net10.0\Microsoft.Win32.Registry.dll
+C:\Users\Vega\.nuget\packages\microsoft.win32.systemevents\10.0.12\lib\net10.0\Microsoft.Win32.SystemEvents.dll
 C:\Users\Vega\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.57\lib\net8.0\Microsoft.Windows.SDK.NET.dll
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\10.0.12\ref\net10.0\mscorlib.dll
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\10.0.12\ref\net10.0\netstandard.dll
@@ -67,6 +68,7 @@ C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\10.0.12\ref\net10.0\Syst
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\10.0.12\ref\net10.0\System.Diagnostics.TraceSource.dll
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\10.0.12\ref\net10.0\System.Diagnostics.Tracing.dll
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\10.0.12\ref\net10.0\System.dll
+C:\Users\Vega\.nuget\packages\system.drawing.common\10.0.12\lib\net10.0\System.Drawing.Common.dll
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\10.0.12\ref\net10.0\System.Drawing.dll
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\10.0.12\ref\net10.0\System.Drawing.Primitives.dll
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\10.0.12\ref\net10.0\System.Dynamic.Runtime.dll
@@ -120,6 +122,8 @@ C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\10.0.12\ref\net10.0\Syst
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\10.0.12\ref\net10.0\System.Numerics.dll
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\10.0.12\ref\net10.0\System.Numerics.Vectors.dll
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\10.0.12\ref\net10.0\System.ObjectModel.dll
+C:\Users\Vega\.nuget\packages\system.drawing.common\10.0.12\lib\net10.0\System.Private.Windows.Core.dll
+C:\Users\Vega\.nuget\packages\system.drawing.common\10.0.12\lib\net10.0\System.Private.Windows.GdiPlus.dll
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\10.0.12\ref\net10.0\System.Reflection.DispatchProxy.dll
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\10.0.12\ref\net10.0\System.Reflection.dll
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\10.0.12\ref\net10.0\System.Reflection.Emit.dll
