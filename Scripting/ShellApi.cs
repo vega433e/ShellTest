@@ -12,8 +12,8 @@ public sealed class ShellApi
 
     public ShellApi(IReadOnlyList<ShortcutConfig> shortcuts, Action exit)
     {
-        _shortcuts = shortcuts;
-        _exit = exit;
+        _shortcuts = shortcuts ?? Array.Empty<ShortcutConfig>();
+        _exit = exit ?? (() => { });
     }
 
     internal CsxModuleHost? Modules { get; set; }
@@ -28,16 +28,22 @@ public sealed class ShellApi
 
     public void Launch(string path, string? arguments = null, string? workingDirectory = null)
     {
-        if (string.IsNullOrWhiteSpace(path)) return;
+        if (string.IsNullOrWhiteSpace(path))
+        {
+            OverlayLog.Warn("Launch called with empty path");
+            return;
+        }
 
         try
         {
+            var expanded = Environment.ExpandEnvironmentVariables(path);
             var psi = new ProcessStartInfo
             {
-                FileName = Environment.ExpandEnvironmentVariables(path),
+                FileName = expanded,
                 Arguments = arguments ?? string.Empty,
                 UseShellExecute = true,
             };
+
             if (!string.IsNullOrWhiteSpace(workingDirectory))
                 psi.WorkingDirectory = Environment.ExpandEnvironmentVariables(workingDirectory);
 

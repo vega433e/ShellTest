@@ -1,6 +1,7 @@
 using System.Globalization;
 using Avalonia;
 using Avalonia.Media;
+using ShellOverlay.Layout;
 
 namespace ShellOverlay.Styling;
 
@@ -67,17 +68,10 @@ public static class CssParser
 
         if (idIdx >= 0)
         {
-            id = raw[(idIdx + 1)..].Trim();
+            var rawId = raw[(idIdx + 1)..].Trim();
+            // Must match XmlLayoutLoader.SanitizeIdentifier so selectors line up with controls.
+            id = XmlLayoutLoader.SanitizeIdentifier(rawId);
             if (idIdx > 0) typeName = raw[..idIdx].Trim();
-        }
-        else if (classIdx >= 0)
-        {
-            className = raw[(classIdx + 1)..].Trim();
-            if (classIdx > 0) typeName = raw[..classIdx].Trim();
-        }
-        else
-        {
-            typeName = raw.Trim();
         }
 
         return new CssRule

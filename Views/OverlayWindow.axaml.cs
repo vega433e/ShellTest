@@ -18,7 +18,9 @@ public partial class OverlayWindow : Window
     private CsxModuleHost? _modules;
     private LayoutBuildResult? _layout;
     private DispatcherTimer? _tick;
+    private bool _tickRunning;
     private bool _attached;
+    private bool _shuttingDown;
 
     public OverlayWindow(AppConfig config, ShellManager shell)
     {
@@ -40,7 +42,7 @@ public partial class OverlayWindow : Window
         catch (Exception ex)
         {
             OverlayLog.Error("Overlay bootstrap failed", ex);
-            _shell.RestoreSystemShell();
+            try { _shell.RestoreSystemShell(); } catch { }
             ShowFallback(ex.Message);
         }
     }
@@ -53,11 +55,12 @@ public partial class OverlayWindow : Window
 
         var shortcuts = XmlLayoutLoader.LoadShortcuts(_config.ShortcutsPath);
         var api = new ShellApi(shortcuts, ShutdownOverlay);
-        _modules = new CsxModuleHost(api);
+        _modules = new CsxModuleHost(api, _config.ModulesPath);
         api.Modules = _modules;
 
         var loader = new XmlLayoutLoader(shortcuts, api);
         _layout = loader.Build(_config.LayoutPath);
+
         RootHost.Children.Clear();
         RootHost.Children.Add(_layout.Root);
 
@@ -65,21 +68,29 @@ public partial class OverlayWindow : Window
 
         var dipHeight = Math.Max(8, _layout.BarHeight + _layout.Margin * 1.5);
         Height = dipHeight;
-        var scale = RenderScaling <= 0 ? 1 : RenderScaling;
-        _shell.ReservedHeight = Math.Max(8, (int)Math.Round(dipHeight * scale));
+        UpdateReservedHeight();
 
         Win32Properties.AddWndProcHookCallback(this, WndProcHook);
         _shell.MakeToolWindow(hwnd);
-        _shell.ExitHotkeyPressed += (_, _) => ShutdownOverlay();
+        _shell.ExitHotkeyPressed += OnExitHotkey;
         _shell.RegisterExitHotkey(hwnd, _config.ExitHotkey);
 
         _shell.HideSystemShell(_config);
         if (_config.RegisterAppBar)
             _shell.RegisterAppBar(hwnd, _layout.Edge);
 
-        await _modules.LoadDirectoryAsync(_config.ModulesPath);
+        ScalingChanged += (_, _) => UpdateReservedHeight();
+
+        await _modules.LoadDirectoryAsync();
         await _modules.InitAsync();
         StartModuleTicks();
+    }
+
+    private void UpdateReservedHeight()
+    {
+        var scale = RenderScaling <= 0 ? 1 : RenderScaling;
+        _shell.ReservedHeight = Math.Max(8, (int)Math.Round(Height * scale));
+        _shell.RefreshPosition();
     }
 
     private void ApplyCss()
@@ -90,10 +101,17 @@ public partial class OverlayWindow : Window
             return;
         }
 
-        var css = File.ReadAllText(_config.StylesPath);
-        var rules = CssParser.Parse(css);
-        foreach (var style in CssStyleBuilder.Build(rules))
-            Styles.Add(style);
+        try
+        {
+            var css = File.ReadAllText(_config.StylesPath);
+            var rules = CssParser.Parse(css);
+            foreach (var style in CssStyleBuilder.Build(rules))
+                Styles.Add(style);
+        }
+        catch (Exception ex)
+        {
+            OverlayLog.Error("CSS load failed", ex);
+        }
     }
 
     private void StartModuleTicks()
@@ -101,72 +119,125 @@ public partial class OverlayWindow : Window
         if (_layout is null || _modules is null) return;
 
         _tick = new DispatcherTimer { Interval = TimeSpan.FromSeconds(1) };
-        _tick.Tick += async (_, _) =>
+        _tick.Tick += OnTick;
+        _tick.Start();
+    }
+
+    private async void OnTick(object? sender, EventArgs e)
+    {
+        if (_tickRunning || _shuttingDown) return;
+        if (_layout is null || _modules is null) return;
+
+        _tickRunning = true;
+        try
         {
             foreach (var (control, module) in _layout.Modules)
             {
-                var text = await _modules.RenderAsync(module);
+                string? text;
+                try { text = await _modules.RenderAsync(module); }
+                catch (Exception ex)
+                {
+                    OverlayLog.Error($"Render '{module}' threw", ex);
+                    continue;
+                }
+
                 if (text is null) continue;
+
                 switch (control)
                 {
                     case TextBlock label:
                         label.Text = text;
                         break;
-                    case ContentControl content:
-                        content.Content = text;
-                        break;
+
                     case Border { Child: ContentControl inner }:
                         inner.Content = text;
                         break;
-                    case Button button:
-                        button.Content = text;
+
+                    case ContentControl content:
+                        content.Content = text;
                         break;
                 }
             }
-        };
-        _tick.Start();
+        }
+        finally
+        {
+            _tickRunning = false;
+        }
     }
 
     private IntPtr WndProcHook(IntPtr hWnd, uint msg, IntPtr wParam, IntPtr lParam, ref bool handled)
     {
-        if (_shell.HandleMessage(msg, unchecked((uint)wParam.ToInt64()), lParam))
-            handled = true;
+        try
+        {
+            if (_shell.HandleMessage(msg, unchecked((uint)wParam.ToInt64()), lParam))
+                handled = true;
+        }
+        catch (Exception ex)
+        {
+            OverlayLog.Error("WndProcHook failed", ex);
+        }
         return IntPtr.Zero;
     }
+
+    private void OnExitHotkey(object? sender, EventArgs e) => ShutdownOverlay();
 
     private void ShowFallback(string error)
     {
         RootHost.Children.Clear();
+
         var exit = new Button { Content = "Exit", Classes = { "overlay" } };
         exit.Click += (_, _) => ShutdownOverlay();
+
         RootHost.Children.Add(new StackPanel
         {
-            Margin = new Avalonia.Thickness(16),
+            Margin = new Thickness(16),
             Children =
             {
-                new TextBlock { Text = "ShellOverlay failed to load layout. " + error },
+                new TextBlock
+                {
+                    Text = "ShellOverlay failed to load layout.\n" + error,
+                    TextWrapping = Avalonia.Media.TextWrapping.Wrap,
+                },
                 exit,
             },
         });
-        Height = 72;
+
         Width = 480;
+        Height = 96;
+        var screen = Screens.Primary ?? Screens.All.FirstOrDefault();
+        if (screen is not null)
+        {
+            var wa = screen.WorkingArea;
+            Position = new PixelPoint(wa.X + (wa.Width - (int)Width) / 2, wa.Y + 80);
+        }
     }
 
     private void ShutdownOverlay()
     {
-        _tick?.Stop();
-        _modules?.Dispose();
-        _shell.Dispose();
-        Close();
-        if (Avalonia.Application.Current?.ApplicationLifetime is Avalonia.Controls.ApplicationLifetimes.IClassicDesktopStyleApplicationLifetime desktop)
-            desktop.Shutdown();
+        if (_shuttingDown) return;
+        _shuttingDown = true;
+
+        try { _shell.ExitHotkeyPressed -= OnExitHotkey; } catch { }
+        try { _tick?.Stop(); } catch { }
+        try { _modules?.Dispose(); } catch { }
+        try { _shell.Dispose(); } catch { }
+
+        try { Close(); } catch { }
+
+        if (Application.Current?.ApplicationLifetime
+            is Avalonia.Controls.ApplicationLifetimes.IClassicDesktopStyleApplicationLifetime desktop)
+        {
+            try { desktop.Shutdown(); } catch { }
+        }
     }
 
     protected override void OnClosed(EventArgs e)
     {
-        _tick?.Stop();
-        _modules?.Dispose();
-        _shell.Dispose();
+        _shuttingDown = true;
+        try { _shell.ExitHotkeyPressed -= OnExitHotkey; } catch { }
+        try { _tick?.Stop(); } catch { }
+        try { _modules?.Dispose(); } catch { }
+        try { _shell.Dispose(); } catch { }
         base.OnClosed(e);
     }
 }

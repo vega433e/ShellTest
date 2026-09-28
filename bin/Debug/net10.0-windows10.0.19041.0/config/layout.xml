@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shell>
+	<!--
+    Раскладка панели.
+    Слева: Пуск, пины.
+    Справа: часы/дата, выход.
+    filler раздвигает эти две группы по краям.
+  -->
+	<bar id="main" class="bar" edge="bottom" height="44" margin="6">
+
+		<button id="start" class="start" module="start">⊞</button>
+		<separator class="divider"/>
+		<pins/>
+
+		<filler/>
+
+		<panel orientation="vertical" class="clock-stack">
+			<label id="clock" class="time" module="clock">--:--</label>
+			<label id="date"  class="date" module="date">--.--</label>
+		</panel>
+
+		<separator class="divider"/>
+
+		<button id="exit" class="exit" module="exit">✕</button>
+
+	</bar>
+</shell>

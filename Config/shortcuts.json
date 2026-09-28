@@ -5,7 +5,7 @@
       "path": "wt.exe"
     },
     {
-      "name": "Explorer",
+      "name": "Files",
       "path": "explorer.exe"
     },
     {
@@ -13,8 +13,12 @@
       "path": "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe"
     },
     {
-      "name": "VS Code",
+      "name": "Code",
       "path": "%LOCALAPPDATA%\\Programs\\Microsoft VS Code\\Code.exe"
+    },
+    {
+      "name": "Steam",
+      "path": "C:\\Program Files (x86)\\Steam\\steam.exe"
     }
   ]
 }

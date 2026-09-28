@@ -1,0 +1,1 @@
+string OnRender() => DateTime.Now.ToString("dd.MM.yyyy");

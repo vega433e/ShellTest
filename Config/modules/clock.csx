@@ -1,1 +1,1 @@
-string OnRender() => DateTime.Now.ToString("HH:mm");
+string OnRender() => DateTime.Now.ToString("HH:mm:ss");

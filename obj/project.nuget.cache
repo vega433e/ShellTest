@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "fcJMmZLv5hI=",
+  "dgSpecHash": "d5TSlrS1VJ4=",
   "success": true,
-  "projectFilePath": "D:\\Projects\\.Net Projects\\ShellOverlay\\ShellOverlay.csproj",
+  "projectFilePath": "D:\\Projects\\.Net Projects\\ShellOverlayTest\\ShellOverlay.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Vega\\.nuget\\packages\\avalonia\\11.3.22\\avalonia.11.3.22.nupkg.sha512",
     "C:\\Users\\Vega\\.nuget\\packages\\avalonia.angle.windows.natives\\2.1.25547.20250602\\avalonia.angle.windows.natives.2.1.25547.20250602.nupkg.sha512",

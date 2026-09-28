@@ -46,13 +46,17 @@ public static class CssStyleBuilder
 
         if (type is "button")
         {
-            if (hasClass && rule.IsHover) return new Style(x => x.OfType<Button>().Class(cls).Pointerover());
-            if (hasClass) return new Style(x => x.OfType<Button>().Class(cls));
-            return rule.IsHover ? new Style(x => x.OfType<Button>().Pointerover()) : new Style(x => x.OfType<Button>());
+            if (hasClass && rule.IsHover)
+                return new Style(x => x.OfType<Button>().Class(cls).Class(":pointerover"));
+            if (hasClass)
+                return new Style(x => x.OfType<Button>().Class(cls));
+            return rule.IsHover
+                ? new Style(x => x.OfType<Button>().Class(":pointerover"))
+                : new Style(x => x.OfType<Button>());
         }
 
         if (hasClass && rule.IsHover)
-            return new Style(x => x.OfType<TemplatedControl>().Class(cls).Pointerover());
+            return new Style(x => x.OfType<TemplatedControl>().Class(cls).Class(":pointerover"));
 
         if (hasClass)
             return new Style(x => x.OfType<Control>().Class(cls));

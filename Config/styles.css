@@ -1,42 +1,101 @@
-/* Базовый стиль панели. Подмножество CSS: цвета, размеры, hover, transform, transition. */
-
+/* ============================================================
+   Панель
+   ============================================================ */
 .bar {
-  background-color: #1e1e2e;
-  border-radius: 16px;
-  border-width: 1px;
-  border-color: #45475a;
-  padding: 8px 12px;
+    background-color: #16161f;
+    border-radius: 14px;
+    border-width: 1px;
+    border-color: #2e2e46;
+    padding: 4px 10px;
 }
 
+/* ============================================================
+   Кнопка Пуск
+   ============================================================ */
+.start {
+    width: 34px;
+    height: 34px;
+    border-radius: 9px;
+    background-color: #4b6cf0;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 700;
+    transform: translateY(0px);
+    transition: background 120ms, transform 100ms;
+}
+
+    .start:hover {
+        background-color: #5f7eff;
+        transform: translateY(-1px);
+    }
+
+/* ============================================================
+   Общие кнопки и пины
+   ============================================================ */
 .icon-btn {
-  width: 48px;
-  height: 48px;
-  border-radius: 12px;
-  background-color: #313244;
-  color: #cdd6f4;
-  font-size: 16px;
-  font-weight: 600;
-  transform: translateY(0px);
-  transition: transform 150ms, background 150ms;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    background-color: #1e1e2c;
+    color: #b8b8d0;
+    font-size: 12px;
+    font-weight: 700;
+    transform: translateY(0px);
+    transition: background 120ms, color 120ms, transform 100ms;
 }
 
-.icon-btn:hover {
-  background-color: #45475a;
-  transform: translateY(-4px);
-}
+    .icon-btn:hover {
+        background-color: #2a2a3e;
+        color: #ffffff;
+        transform: translateY(-1px);
+    }
 
 .pin {
-  border-radius: 24px;
+    border-radius: 8px;
 }
 
-.separator {
-  background-color: #45475a;
-  width: 1px;
+/* ============================================================
+   Разделитель
+   ============================================================ */
+.divider {
+    background-color: #2a2a3e;
+    width: 1px;
 }
 
-.clock {
-  color: #cdd6f4;
-  font-size: 18px;
-  font-weight: 600;
-  padding: 0 12px;
+/* ============================================================
+   Часы и дата
+   ============================================================ */
+.clock-stack {
+    padding: 0 10px;
 }
+
+.time {
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.date {
+    color: #6a6a88;
+    font-size: 10px;
+    font-weight: 500;
+}
+
+/* ============================================================
+   Кнопка выхода
+   ============================================================ */
+.exit {
+    width: 30px;
+    height: 34px;
+    border-radius: 9px;
+    background-color: #2a1418;
+    color: #ff5577;
+    font-size: 13px;
+    font-weight: 700;
+    transition: background 120ms, color 120ms;
+}
+
+    .exit:hover {
+        background-color: #4a1c24;
+        color: #ff8099;
+    }

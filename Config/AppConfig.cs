@@ -1,5 +1,6 @@
 using System.Text.Json;
 using System.Text.Json.Serialization;
+using ShellOverlay.Models;   
 
 namespace ShellOverlay.Config;
 
